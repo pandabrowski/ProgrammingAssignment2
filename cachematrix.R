@@ -3,10 +3,20 @@
 
 ## first function is used to as a storage object, second function is used for inversion calculation and access
 
+## usage example
+# x <- matrix(1:4,2,2)                      // Create a matrix 
+# cx <- makeCacheMatrix(x)                  // Create cached matrix object
+# cacheSolve(cx)                            // Return inverted matrix
+# cacheSolve(cx)                            // Return inverted matrix (fetch from cachce)
+
+
+
+
+
 
 ## Function defines internal variables for storage of matrix+inverted matrix and 4 accessor functions  for them.
-## input - matrix
-## output - list of 4 functions
+# input - matrix
+# output - list of 4 functions
 
 makeCacheMatrix <- function(x = matrix()) {
 
